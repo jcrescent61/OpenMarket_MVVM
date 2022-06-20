@@ -100,8 +100,8 @@
 		9B0F1A3C28605DFF00F76946 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				9B0F1A4328605F3900F76946 /* ItemCollectionView */,
 				9B0F1A4E2860A32200F76946 /* MarketNavigationController.swift */,
+				9B0F1A4328605F3900F76946 /* ItemCollectionView */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
