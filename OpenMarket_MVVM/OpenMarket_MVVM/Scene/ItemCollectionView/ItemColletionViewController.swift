@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
+import RxRelay
 
 enum ItemCollectionViewConstraint {
     static let deviceWidth = UIScreen.main.bounds.width
@@ -21,6 +24,7 @@ class ItemCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.request()
         setUp()
     }
     

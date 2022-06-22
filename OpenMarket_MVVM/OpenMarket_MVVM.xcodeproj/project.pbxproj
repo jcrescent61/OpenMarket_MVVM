@@ -18,6 +18,9 @@
 		9B0F1A4528605F5600F76946 /* ItemCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F1A4428605F5600F76946 /* ItemCollectionCell.swift */; };
 		9B0F1A4A28607E8100F76946 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F1A4928607E8100F76946 /* UIView+.swift */; };
 		9B0F1A4F2860A32200F76946 /* MarketNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0F1A4E2860A32200F76946 /* MarketNavigationController.swift */; };
+		9BDDDF8A286327F100B22D07 /* OpenMarketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDDF89286327F100B22D07 /* OpenMarketAPI.swift */; };
+		9BDDDF8C2863294000B22D07 /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDDF8B2863294000B22D07 /* JSONHandler.swift */; };
+		9BDDDF8E286329B500B22D07 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDDDF8D286329B500B22D07 /* NetworkHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		9B0F1A4428605F5600F76946 /* ItemCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionCell.swift; sourceTree = "<group>"; };
 		9B0F1A4928607E8100F76946 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		9B0F1A4E2860A32200F76946 /* MarketNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketNavigationController.swift; sourceTree = "<group>"; };
+		9BDDDF89286327F100B22D07 /* OpenMarketAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMarketAPI.swift; sourceTree = "<group>"; };
+		9BDDDF8B2863294000B22D07 /* JSONHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
+		9BDDDF8D286329B500B22D07 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,7 @@
 			children = (
 				9B0F1A3A28605D9600F76946 /* Entry */,
 				9B0F1A3B28605DF100F76946 /* Model */,
+				9BDDDF88286327D400B22D07 /* Networker */,
 				9B0F1A3C28605DFF00F76946 /* Scene */,
 				9B0F1A4828607E7100F76946 /* Extension */,
 				9B0F1A4D28608DD500F76946 /* SupportFile */,
@@ -132,6 +139,16 @@
 				7E41A782285462AE009FA87D /* Info.plist */,
 			);
 			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		9BDDDF88286327D400B22D07 /* Networker */ = {
+			isa = PBXGroup;
+			children = (
+				9BDDDF89286327F100B22D07 /* OpenMarketAPI.swift */,
+				9BDDDF8B2863294000B22D07 /* JSONHandler.swift */,
+				9BDDDF8D286329B500B22D07 /* NetworkHandler.swift */,
+			);
+			path = Networker;
 			sourceTree = "<group>";
 		};
 		AC678A48BC1A20C430C162CA /* Pods */ = {
@@ -248,10 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B0F1A3E28605E2A00F76946 /* Item.swift in Sources */,
+				9BDDDF8E286329B500B22D07 /* NetworkHandler.swift in Sources */,
 				9B0F1A4228605F2900F76946 /* ItemCollectionViewModel.swift in Sources */,
 				9B0F1A4028605EF700F76946 /* ItemColletionViewController.swift in Sources */,
 				9B0F1A4A28607E8100F76946 /* UIView+.swift in Sources */,
 				7E41A775285462AC009FA87D /* AppDelegate.swift in Sources */,
+				9BDDDF8A286327F100B22D07 /* OpenMarketAPI.swift in Sources */,
+				9BDDDF8C2863294000B22D07 /* JSONHandler.swift in Sources */,
 				9B0F1A4528605F5600F76946 /* ItemCollectionCell.swift in Sources */,
 				9B0F1A4F2860A32200F76946 /* MarketNavigationController.swift in Sources */,
 				7E41A777285462AC009FA87D /* SceneDelegate.swift in Sources */,
