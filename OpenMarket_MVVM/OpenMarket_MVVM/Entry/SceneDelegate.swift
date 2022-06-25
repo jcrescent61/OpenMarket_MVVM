@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = MarketNavigationController(rootViewController: ItemCollectionViewController(collectionViewLayout: UICollectionViewFlowLayout()))
+        window?.rootViewController = MarketNavigationController(rootViewController: ItemCollectionViewController())
         window?.backgroundColor = .white
         window?.makeKeyAndVisible()
     }

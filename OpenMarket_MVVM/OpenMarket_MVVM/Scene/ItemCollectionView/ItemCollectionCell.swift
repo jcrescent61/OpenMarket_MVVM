@@ -57,11 +57,11 @@ class ItemCollectionCell: UICollectionViewCell {
 }
 
 extension ItemCollectionCell {
-    func setUpLabel() {
-        titleLabel.text = "title"
-        currencyLabel.text = "KRW"
-        priceLabel.text = "3123123"
-        stockLabel.text = "123"
+    func setUpLabel(item: Item) {
+        titleLabel.text = item.title
+        currencyLabel.text = item.currency
+        priceLabel.text = "\(item.price)"
+        stockLabel.text = "\(item.stock)"
     }
     
     private func setUpUI() {
