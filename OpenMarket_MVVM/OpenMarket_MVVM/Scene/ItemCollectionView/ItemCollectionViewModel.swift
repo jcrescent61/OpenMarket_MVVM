@@ -13,11 +13,12 @@ import RxDataSources
 protocol ItemCollectionInputInterface {
     var onViewDidLoad: PublishRelay<Void> { get }
 }
+
 protocol ItemCollectionOutputInterface {
     var sectionsRelay: Observable<[SectionModel<ItemSection, Item>]> { get }
 }
 
-protocol ItemCollectionInterfaceable: ItemCollectionInputInterface {
+protocol ItemCollectionInterfaceable {
     var input: ItemCollectionInputInterface { get }
     var output: ItemCollectionOutputInterface { get }
 }
@@ -66,17 +67,4 @@ class ItemCollectionViewModel: ItemCollectionInterfaceable, ItemCollectionInputI
             }.bind(to: sectionSubject)
             .disposed(by: disposeBag)
     }
-    
-//    func request() {
-//        networkHandler.request(api: .getItemCollection(page: 1)) { [weak self] result in
-//            guard let self = self else { return }
-//            switch result {
-//            case .success(let data):
-//                guard let model = try? JSONHandler().decodeJSONData(json: data, model: ItemCollection.self) else { return }
-//                self.item.append(contentsOf: model.items)
-//            default:
-//                break
-//            }
-//        }
-//    }
 }

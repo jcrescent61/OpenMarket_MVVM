@@ -41,12 +41,6 @@ class ItemCollectionViewController: UIViewController, UIScrollViewDelegate {
         viewModel.input.onViewDidLoad.accept(())
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-       
-    }
-    
     private func bind() {
         
         collectionView.rx
